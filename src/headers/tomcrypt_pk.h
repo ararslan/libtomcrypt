@@ -364,11 +364,11 @@ int  ecc_shared_secret(const ecc_key *private_key, const ecc_key *public_key,
 int  ecc_encrypt_key(const unsigned char *in,   unsigned long inlen,
                            unsigned char *out,  unsigned long *outlen,
                            prng_state *prng, int wprng, int hash,
-                           ecc_key *key);
+                           const ecc_key *key);
 
 int  ecc_decrypt_key(const unsigned char *in,  unsigned long  inlen,
                            unsigned char *out, unsigned long *outlen,
-                           ecc_key *key);
+                           const ecc_key *key);
 
 int ecc_sign_hash_rfc7518(const unsigned char *in,  unsigned long inlen,
                                 unsigned char *out, unsigned long *outlen,
