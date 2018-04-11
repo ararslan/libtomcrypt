@@ -11,7 +11,7 @@
 
 #ifdef LTC_MECC
 
-const struct {
+static const struct {
    const char *OID;
    const char *names[6];
 } _curve_names[] = {
